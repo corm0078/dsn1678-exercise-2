@@ -59,13 +59,19 @@ body {
   width: 7.3%;
 
   background-color: rgba(204, 204, 204, 0);
+  transition: all 200m linear;    
+}
+
+.chart__item:hover,
+.chart__item:focus,
+.chart__item:active {
+    background-color:rgba(127, 219, 255, 0.26);    
 }
 
 .chart__link,
 .chart__link:link,
 .chart__link:visited {
   display: block;
-
   color: #e2e2e2;
   text-decoration: none;
 }
@@ -74,8 +80,13 @@ body {
   bottom: -1.7em;
   position: absolute;
   width: 100%;
-
   text-align: center;
+  
+  transition: color 200ms linear;
+}
+
+.chart__item:hover .chart__label {
+  color: rgb(166, 226, 248);   
 }
 
 .chart__bar-wrap {
@@ -92,7 +103,14 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+
+  transition: background-color 200ms linear;  
 }
+
+.chart__item:hover .chart__bar {
+ background-color: rgb(79, 201, 247);   
+}
+
 
 .chart__count {
   display: inline-block;
